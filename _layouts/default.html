@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <style>
+      h1 {
+        font-size : 160%;
+        color:#696969;
+        text-align: center;
+      }
+
+      h2 {
+        font-size : 130%;
+        color:#489450;
+        text-align: center;
+      }
+
+      #svgcontainer1 {
+        display: inline-block;
+        float: left;
+      }
+
+      #svgcontainer2 {
+        display: inline-block;
+        float: right;
+      }
+
+      #explcontainer {
+        display: inline-block;
+      }
+    </style>
+    
+    <h1>XXX</h1>
+    <br/>
+    <h2>X</h2>
+    <div id="wrapper">
+      <div id = "svgcontainer1">
+            <p style="color:#789410;font-size:105%"; align="center">In the left, the actual classification given in the original data</p>
+            <button id = "showDetButton" style="padding: 5px 10px; text-align: center;font-size: 80%;margin: 2px 1px;">I want to discover the new classification!</button>
+      </div>
+       <div id = "explcontainer">
+            <h2>What, why and how ? Understanding this visualization thanks to abstraction</h2>
+              <p style="color:#111111;">
+                This visualization uses data from
+              </p>
+              <p style="color:#789410;font-size:110%">What ?</p>
+              <p style="color:#111111;">
+            </p>
+      </div>
+    </div>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script>
+
+      var dat;
+      d3.json("data.json").then(function(data) {
+          dat = data;
+          //Create graph
+          createGraph(500,750);
+      });
+      function createGraph(height, width){
+        
+      }
+
+</script>
+    <div class="wrapper">
+      <header>
+        <p><a href="">Link of this page - for sharing for example</a></p>
+      </header>
+      <section>
+        <p style="font-size:90%">The original data used come from the Colombian open data website</p>
+        <p style="font-size:90%">This project is under <a href="https://opensource.org/licenses/MIT">MIT license.</a></p>
+        <p class="view"><a href="https://github.com/pierreraimbaud/LikertScalesDANE">Project URL on GitHub <small>pierreraimbaud/LikertScalesDANE</small></a>   -   <a style="font-size:90%" href="https://github.com/pierreraimbaud/LikertScalesDANE#markdown">Markdown link</a></p>        
+      </section>
+      <footer>
+        <p>Link to the author GitHub profile: this project is maintained by <a href="https://github.com/pierreraimbaud">pierreraimbaud</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src=""></script>
+    
+  </body>
+</html>
