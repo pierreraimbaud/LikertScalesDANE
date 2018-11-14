@@ -6134,7 +6134,7 @@ d3.legendHelpers = _helpers2.default;
 		var z = d3.scaleSequential(d3.interpolateRdBu)
 		  .domain([-3,3]);
 
-		d3.csv("results.csv").then(function(data, err) {
+		d3.csv("https://raw.githubusercontent.com/pierreraimbaud/LikertScalesDANE/master/_layouts/results.csv").then(function(data, err) {
           dat = data;
 		  if (err) throw err;
 		  var totalAnswers = d3.max(data, function (q) {
